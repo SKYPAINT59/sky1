@@ -12,6 +12,7 @@ a{
     border-bottom: 1px solid gray;
     padding-bottom: 20px;
 
+
   }
   ul{
       text-align: center;
@@ -20,7 +21,53 @@ a{
       list-style: none;
       padding-left: 10px;
       }
+/* 우측 메뉴바     */
+#wrap h1{
+  color: white;
+  position: fixed;
+  z-index: 2;
+  padding: 0;
+  margin: 0;
+  right: 34px;
+  bottom: 515px;
+}
 
+#wrap{
+    width: 100%;
+    height: 100%;
+}
+header .logo_box{
+  position: fixed; right: 12px; top: 75px;
+}
+header .logo_box img{
+  width: 100px;
+  height: 100px;
+
+}
+#wrap header{
+  width: 132px; height: 100%; position: fixed; right: 0px; top: 0px;
+  background-color: black;
+  z-index: 1;
+}
+#wrap header nav{
+  width: 100%; height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#wrap header ul{
+  border-top-width: 0px;
+
+}
+#wrap header nav ul li a{
+  font-size: 16px; color: #fff;
+  font-weight: 500; line-height: 30px;
+
+
+}
+#wrap header nav ul li a:hover{text-decoration: underline; color: red;}
+
+/* 우측메뉴바 # */
 </style>
 <body>
 
@@ -35,6 +82,21 @@ a{
   <li><a href="2.html">CSS</a></li>
   <li><a href="3.html">JavaScript</a></li>
 </ul>
+<!-- 오른쪽 메뉴바 -->
+<section id="wrap">
+  <h1>TDW</h1>
+  <header>
+    <strong class="logo_box"><image src="https://cdn.pixabay.com/photo/2016/08/25/07/30/orange-1618917_960_720.png" alt="TDW"></image></strong>
+    <nav>
+      <ul>
+        <li><a href="1.html">회사소개</a></li>
+        <li><a href="1.html">회사제품</a></li>
+        <li><a href="1.html">FAQ</a></li>
+      </ul>
+    </nav>
+  </header>
+</section>
+<!-- 오른쪽 메뉴바 < -->
 
 
 
